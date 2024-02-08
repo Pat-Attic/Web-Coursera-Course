@@ -1,42 +1,156 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Pat's Website</title>
-<style>
 
-#box{
-    background-color: grey;
-}
-#content{
-    background-color: blue;
-}
-</style>
+<head>
+    <meta charset="utf-8">
+    <title>Pat's Website</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f03c36;
+        }
+        h1 {
+            margin-bottom: 30px;
+            font-size: 175%;
+            color: white;
+        }
+
+        p {
+            position: absolute;
+            width: 120px;
+            top : 0;
+            right :0px;
+            border: 1px solid black;
+            margin-bottom: 15px;
+            padding: 5px;
+            text-align: center;
+            font-size: 125%;
+        }
+
+        #p1 {
+            background-color: #a82828;
+            border: 1px solid rgb(0, 0, 0);
+            border-top: none;
+            border-right: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        #p2 {
+            background-color: #a87128;
+            border: 1px solid rgb(0, 0, 0);
+            border-top: none;
+            border-right: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        #p3 {
+            background-color: rgb(42, 81, 165);
+            border: 1px solid rgb(0, 0, 0);
+            border-top: none;
+            border-right: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .row {
+            width: 100%;
+        }
+
+        /* Desktop */
+        @media (min-width:922px) {
+            .col-lg-4 {
+                float: left;
+            }
+            .col-lg-4 {
+                width: 33.3%;
+            }
+        }
+
+        /* Tablet */
+        @media (min-width: 768px) and (max-width: 991px) {
+            .col-md-6, .col-md-12 {
+                float: left;
+            }
+            .col-md-6{
+                width: 50%;
+            }
+            .col-md-12{
+                width:100%;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            .col-sm-12 {
+                float: left;
+            }
+            .col-sm-12 {
+                width: 100%;
+            }
+        }
+
+        #box {
+            position: relative;
+            background-color: rgb(255, 247, 224);
+            border: 1px solid rgb(0, 0, 0);
+            margin: 20px;
+            padding: 30px 20px 20px 20px;
+            height: 200px;
+            overflow: auto;
+        }
+
+        #content {
+            padding: 10px;
+            
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+
+
 </head>
+
 <body>
 
-<h1>Hello Coursera! This is my second homework.</h1>
+    <h1>Our menu</h1>
 
-<div id="box">
-    <div id="content" >This is section 1. May I type in the lyrics that I like?</div>
-</div>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div id="box">
+                <p id="p1">Chicken</p>
+                <div id="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui porro fugiat nostrum at obcaecati iure perferendis. Porro sint numquam, tempora provident cumque minus pariatur distinctio quo quos veniam. Velit, rerum.</div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div id="box">
+                <p id="p2">Pork</p>
+                <div id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima obcaecati quibusdam nemo sit culpa deserunt, rerum quo aliquid qui quidem placeat quasi cum similique ea assumenda quas! Omnis, quibusdam at!
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <div id="box">
+                <p id="p3">Fish</p>
+                <div id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ratione assumenda commodi expedita accusantium, nobis quis, perferendis reiciendis excepturi blanditiis, dolorum reprehenderit. Consectetur provident sequi commodi necessitatibus doloribus delectus molestiae.</div>
+                
+            </div>
+        </div>
 
-<!--Desktop -->
-@media (min-width:922px){
-
-}
-<!--Tablet-->
-@media ( min-width: 768px) and (max-width: 991px){
-
-}
-<!--Mobile-->
-@media ( max-width: 767px){
-    
-}
+    </div>
 
 
-<h2>Section 2</h2>
-<h2>Section 3</h2>
 
 </body>
+
 </html>
